@@ -1,0 +1,102 @@
+{
+    "menu-drinks": {
+        "items": [
+            {
+                "name": "Fuel",
+                "price": 3.00,
+                "quantity": 1,
+                "options": ["Monster", "RedBull"],
+                "icon": "fuel",
+                "stocked": true
+            },
+            {
+                "name": "Soda",
+                "price": 1.00,
+                "quantity": 1,
+                "options": ["Sprite", "Coca-Cola"],
+                "icon": "cup-soda",
+                "stocked": true
+            }
+        ]
+    },
+    "menu-snacks": {
+        "items": [
+            {
+                "name": "Ice Cream",
+                "price": 1.00,
+                "quantity": 1,
+                "options": ["Oreo Sandwich", "Drumstick"],
+                "icon": "ice-cream-cone",
+                "stocked": true
+            },
+            {
+                "name": "Candy",
+                "price": 1.50,
+                "quantity": 1,
+                "options": ["KitKat", "Reeses"],
+                "icon": "candy",
+                "stocked": true
+            },
+            {
+                "name": "Cinnamon Roll",
+                "price": 1.00,
+                "quantity": 1,
+                "options": ["Big Texas"],
+                "icon": "shell",
+                "stocked": true
+            }
+        ]
+    },
+    "menu-food": {
+        "items": [
+            {
+                "name": "Uncrustables",
+                "price": 1.00,
+                "quantity": 1,
+                "options": [],
+                "icon": "sandwich",
+                "stocked": true
+            },
+            {
+                "name": "Breakfast Sandwich",
+                "price": 2.00,
+                "quantity": 1,
+                "options": [],
+                "icon": "sandwich",
+                "stocked": true
+            },
+            {
+                "name": "Pizza Rolls",
+                "price": 2.00,
+                "quantity": 10,
+                "options": [],
+                "icon": "bandage",
+                "stocked": true
+            },
+            {
+                "name": "Wings",
+                "price": 2.00,
+                "quantity": 10,
+                "options": ["Honey BBQ"],
+                "icon": "drumstick",
+                "stocked": false
+            },
+            {
+                "name": "Corndog",
+                "price": 1.00,
+                "quantity": 1,
+                "options": [],
+                "icon": "popsicle",
+                "stocked": true
+            },
+            {
+                "name": "Pizza Bagels",
+                "price": 2.00,
+                "quantity": 10,
+                "options": [],
+                "icon": "torus",
+                "stocked": true
+            }
+        ]
+    }
+}

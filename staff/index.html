@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Full Circle NKC Bar Staff</title>
+</head>
+<body>
+    <h1>Protected Page: Bar Staff</h1>
+    <h2>Menu</h2>
+    <h3>Add Item</h3>
+    <form action="/data/test.json" method="post" enctype="text/plain">
+        <label>
+            <input type="text" name="name" placeholder="Name" />
+        </label>
+        <label>
+            $
+            <input type="number" name="price" placeholder="0.00" step="0.01" value="0.00" />
+        </label>
+        <br />
+        <label>
+            Options
+            <input type="text" />
+            <button>Add</button>
+        </label>
+        <br />
+        <label>
+            Icon
+            <input type="text" />
+        </label>
+        <input type="submit" />
+    </form>
+</body>
+</html>

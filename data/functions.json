@@ -1,0 +1,44 @@
+{
+    "2025-04-11T19:30:00": {
+        "name": "Head 2 Head",
+        "icon": "angry",
+        "cost": 10.00,
+        "location": "6601 Ste C Royal St, Pleasant Valley, MO"
+    },
+    "2025-04-12T19:30:00": {
+        "name": "Iron Chef",
+        "icon": "utensils-crossed",
+        "cost": 6.00,
+        "location": "13860 Wyandotte St, Kansas City, MO"
+    },
+    "2025-04-25T19:30:00": {
+        "name": "Dopefiend Jeopardy",
+        "icon": "mic-vocal",
+        "cost": 8.00,
+        "location": "6601 Ste C Royal St, Pleasant Valley, MO"
+    },
+    "2025-04-26T19:30:00": {
+        "name": "Name That Tune",
+        "icon": "music",
+        "cost": 7.00,
+        "location": "13860 Wyandotte St, Kansas City, MO"
+    },
+    "2025-05-02T19:30:00": {
+        "name": "Limo Night",
+        "icon": "car-front",
+        "cost": 0.00,
+        "location": "6601 Ste C Royal St, Pleasant Valley, MO"
+    },
+    "2025-05-03T19:30:00": {
+        "name": "TBD",
+        "icon": "circle-help",
+        "cost": null,
+        "location": "TBD"
+    },
+    "2025-05-03T13:00:00": {
+        "name": "Graduation Party",
+        "icon": "graduation-cap",
+        "cost": 0.00,
+        "location": "6601 Ste C Royal St, Pleasant Valley, MO"
+    }
+}
