@@ -16,6 +16,22 @@
                 "options": ["Sprite", "Coca-Cola"],
                 "icon": "cup-soda",
                 "stocked": true
+            },
+            {
+                "name": "Coffee",
+                "price": 3.00,
+                "quantity": 1,
+                "options": ["Vanilla"],
+                "icon": "coffee",
+                "stocked": true
+            },
+            {
+                "name": "Blue Sex",
+                "price": 3.00,
+                "quantity": 1,
+                "options": [],
+                "icon": "coffee",
+                "stocked": true
             }
         ]
     },

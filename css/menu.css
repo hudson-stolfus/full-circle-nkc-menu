@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-    margin: 0 0 0.5em 0;
+    margin: 0 0 0.25em 0;
     font-family: var(--heading-font), sans-serif;
     font-weight: normal;
     font-size: 1em;
@@ -78,7 +78,7 @@ svg.logo {
     height: 100vh;
     display: flex;
     flex-direction: row;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .menu-categories {
@@ -98,10 +98,6 @@ svg.logo {
 #menu-overview {
     min-width: 25vw;
     max-width: 25vw;
-}
-
-.menu-items {
-    margin-top: 0.5em;
 }
 
 vr {
@@ -129,7 +125,7 @@ vr {
 
 .card {
     background: var(--foreground);
-    /*border-radius: 8px;*/
+    border-radius: 2px;
     margin-bottom: 0.5em;
     padding: 0.5em;
 }
@@ -154,8 +150,8 @@ vr {
     vertical-align: top;
     stroke-linejoin: bevel;
     stroke-linecap: round;
-    display: inline-flex;
-    /*display: none;*/
+    /*display: inline-flex;*/
+    display: none;
 }
 
 .card-name {
