@@ -185,15 +185,12 @@ vr {
     border-bottom: 1px solid var(--text-muted);
 }
 
-@keyframes scroll {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-100%);
-    }
-}
-
 #functions-dynamic {
     overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#functions-dynamic::-webkit-scrollbar {
+    display: none;
 }

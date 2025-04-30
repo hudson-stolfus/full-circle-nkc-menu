@@ -1,3 +1,13 @@
+function marquee(element, child) {
+    if (child >= element.children.length) {
+        child = 0;
+    }
+    element.children[child].scrollIntoView({behavior: 'smooth'});
+    setTimeout(() => {
+        marquee(element, child + 1);
+    }, 5000);
+}
+
 fetch('/data/functions.json').then(response => response.json()).then((functions) => {
     const upcoming = document.getElementById('functions-dynamic');
     for (let date of Object.keys(functions)) {
@@ -36,6 +46,11 @@ fetch('/data/functions.json').then(response => response.json()).then((functions)
             upcoming.appendChild(functionEl);
         }
     }
+
+    if (upcoming.scrollHeight > upcoming.getBoundingClientRect().height) {
+        marquee(upcoming, 0);
+    }
+
     lucide.createIcons();
 });
 
