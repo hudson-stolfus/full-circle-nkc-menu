@@ -19,7 +19,7 @@
             },
             {
                 "name": "Coffee",
-                "price": 3.00,
+                "price": 1.00,
                 "quantity": 1,
                 "options": ["Vanilla"],
                 "icon": "coffee",
@@ -27,7 +27,7 @@
             },
             {
                 "name": "Blue Sex",
-                "price": 3.00,
+                "price": 2.00,
                 "quantity": 1,
                 "options": [],
                 "icon": "coffee",

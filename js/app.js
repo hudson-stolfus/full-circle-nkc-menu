@@ -11,11 +11,11 @@ function marquee(element, child) {
 fetch('/data/functions.json').then(response => response.json()).then((functions) => {
     const upcoming = document.getElementById('functions-dynamic');
     for (let date of Object.keys(functions)) {
-        if (new Date(date) > new Date().setHours(23, 59, 59)) {
+        if (new Date(date) > new Date().setHours(23, 59, 59) || true) {
             let functionEl = document.createElement('div');
             functionEl.classList.add('card');
 
-            let heading = document.createElement('h3');
+            let heading = document.createElement('h4');
             heading.classList.add('card-heading');
             let icon = document.createElement('i');
             icon.setAttribute('data-lucide', functions[date].icon);
@@ -61,7 +61,7 @@ fetch('/data/menu.json').then(response => response.json()).then((menu) => {
             itemEl.classList.add('menu-item');
             if (!item.stocked) itemEl.classList.add('sold-out');
 
-            let heading = document.createElement('h3');
+            let heading = document.createElement('h4');
             heading.classList.add('card-heading');
             let icon = document.createElement('i');
             icon.setAttribute('data-lucide', item.icon);

@@ -4,16 +4,14 @@
     --accent: #ff1000;
     --text: #000000;
     --text-muted: #444444;
-    /*--heading-font: 'Stray', "Digital Desolation Plus";*/
-    /*--font: "Stray", "Digital Desolation Plus";*/
     --heading-font: 'Elfreth';
-    --font: "Times New Roman";
+    --font: "ernst";
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --background: #000000;
-        --foreground: #1d1d1d;
+        --foreground: #1d1d1daa;
         --text: #FFFFFF;
         --text-muted: #666666;
     }
@@ -31,7 +29,7 @@ h1 {
     margin: 0;
     font-family: var(--heading-font), sans-serif;
     font-weight: normal;
-    font-size: 1.5em;
+    /*font-size: 1.5em;*/
     color: var(--accent);
     text-align: center;
 }
@@ -40,7 +38,7 @@ h2 {
     margin: 0 0 0.25em 0;
     font-family: var(--heading-font), sans-serif;
     font-weight: normal;
-    font-size: 1em;
+    /*font-size: 1em;*/
     color: color-mix(var(--accent), var(--text));
     text-align: center;
 }
@@ -50,7 +48,7 @@ h3, h4, h5, h6 {
     font-family: var(--heading-font), sans-serif;
     font-weight: lighter;
     /*line-height: 0.75em;*/
-    font-size: 0.8em;
+    /*font-size: 0.8em;*/
 }
 
 .h-rule {
@@ -162,6 +160,8 @@ vr {
 .card-price {
     display: inline-flex;
     color: var(--accent);
+    font-family: var(--font), sans-serif;
+    font-size: 0.75em;
 }
 
 .menu-item {
