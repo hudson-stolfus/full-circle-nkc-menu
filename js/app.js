@@ -11,7 +11,7 @@ function marquee(element, child) {
 fetch('/data/functions.json').then(response => response.json()).then((functions) => {
     const upcoming = document.getElementById('functions-dynamic');
     for (let date of Object.keys(functions)) {
-        if (new Date(date) > new Date().setHours(23, 59, 59) || true) {
+        if (new Date(date) > new Date().setHours(23, 59, 59)) {
             let functionEl = document.createElement('div');
             functionEl.classList.add('card');
 
@@ -51,7 +51,7 @@ fetch('/data/functions.json').then(response => response.json()).then((functions)
         marquee(upcoming, 0);
     }
 
-    lucide.createIcons();
+    //lucide.createIcons();
 });
 
 fetch('/data/menu.json').then(response => response.json()).then((menu) => {
@@ -83,7 +83,7 @@ fetch('/data/menu.json').then(response => response.json()).then((menu) => {
             itemEl.appendChild(content);
             document.getElementById(category).appendChild(itemEl);
 
-            lucide.createIcons();
+            //lucide.createIcons();
         }
     }
 });

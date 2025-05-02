@@ -4,8 +4,8 @@
     --accent: #ff1000;
     --text: #000000;
     --text-muted: #444444;
-    --heading-font: 'Elfreth';
-    --font: "ernst";
+    --heading-font: 'Elfreth', 'Times New Roman';
+    --font: 'ernst', 'Times New Roman';
 }
 
 @media (prefers-color-scheme: dark) {

@@ -29,11 +29,11 @@
         "cost": 0.00,
         "location": "6601 Ste C Royal St, Pleasant Valley, MO"
     },
-    "2025-05-03T19:30:00": {
-        "name": "TBD",
+    "2025-05-03T18:30:00": {
+        "name": "Bring Your Own Meat",
         "icon": "circle-help",
-        "cost": null,
-        "location": "TBD"
+        "cost": 5.00,
+        "location": "16050 Pflumm Rd, Overland Park, KS"
     },
     "2025-05-03T13:00:00": {
         "name": "Graduation Party",
