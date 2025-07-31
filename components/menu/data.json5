@@ -1,0 +1,211 @@
+{
+    "menu-drinks": {
+        title: "Drinks",
+        items: [
+            {
+                name: "Fuel",
+                price: 3.00,
+                quantity: 1,
+                options: [
+                    {
+                        name: "Monster Zero Ultra",
+                        price: null,
+                        stocked: true
+                    },
+                    {
+                        name: "RedBull",
+                        price: null,
+                        stocked: true
+                    },
+                    {
+                        name: "RedBull Sugar Free",
+                        price: null,
+                        stocked: true
+                    }
+                ]
+            },
+            {
+                name: "Soda",
+                price: 1.00,
+                quantity: 1,
+                options: [
+                    {
+                        name: "Sprite",
+                        price: null,
+                        stocked: true
+                    },
+                    {
+                        name: "Coca-Cola",
+                        price: null,
+                        stocked: true
+                    },
+                    {
+                        name: "Dr. Pepper",
+                        price: null,
+                        stocked: true
+                    },
+                    {
+                        name: "Mtn Dew Baja Blast",
+                        price: null,
+                        stocked: true
+                    },
+                    {
+                        name: "Peach Nehi",
+                        price: null,
+                        stocked: true
+                    }
+                ]
+            },
+            {
+                name: "Coffee",
+                price: 1.00,
+                quantity: 1,
+                options: [
+                    {
+                        name: "Black",
+                        price: null,
+                        stocked: true
+                    },
+                    {
+                        name: "Vanilla",
+                        price: null,
+                        stocked: true
+                    }
+                ]
+            },
+            {
+                name: "Blue Sex",
+                price: 2.00,
+                quantity: 1,
+                options: [
+                    {
+                        name: "Creamer",
+                        price: 0.50,
+                        stocked: true
+                    }
+                ]
+            }
+        ]
+    },
+    "menu-snacks": {
+        title: "Snacks",
+        items: [
+            {
+                name: "Ice Cream",
+                price: 1.00,
+                quantity: 1,
+                options: [
+                    {
+                        name: "Oreo Sandwich",
+                        price: null,
+                        stocked: true
+                    },
+                    {
+                        name: "Drumstick",
+                        price: null,
+                        stocked: true
+                    },
+                    {
+                        name: "KitKat Cone",
+                        price: null,
+                        stocked: true
+                    }
+                ]
+            },
+            {
+                name: "Candy",
+                price: 1.50,
+                quantity: 1,
+                options: [
+                    {
+                        name: "KitKat",
+                        price: null,
+                        stocked: true
+                    },
+                    {
+                        name: "Reeses Pieces",
+                        price: null,
+                        stocked: true
+                    }
+                ]
+            },
+            {
+                name: "Cinnamon Roll",
+                price: 1.00,
+                quantity: 1,
+                options: [
+                    {
+                        name: "Big Texas",
+                        price: null,
+                        stocked: true
+                    },
+                ],
+                stocked: true
+            }
+        ]
+    },
+    "menu-food": {
+        title: "Food",
+        items: [
+            {
+                name: "Sandwiches",
+                price: 1.00,
+                quantity: 1,
+                options: [
+                    {
+                        name: "Uncrustable",
+                        price: null,
+                        stocked: true
+                    },
+                    {
+                        name: "Breakfast Sandwich",
+                        price: 1.00,
+                        stocked: true
+                    }
+                ]
+            },
+            {
+                name: "Pizza",
+                price: 1.00,
+                quantity: 10,
+                options: [
+                    {
+                        name: "Rolls",
+                        price: null,
+                        stocked: true
+                    },
+                    {
+                        name: "Bagels",
+                        price: null,
+                        stocked: true
+                    }
+                ]
+            },
+            {
+                name: "Wings",
+                price: 2.00,
+                quantity: 10,
+                options: [
+                    {
+                        name: "Honey BBQ",
+                        price: null,
+                        stocked: false
+                    }
+                ],
+                stocked: false
+            },
+            {
+                name: "Corndog",
+                price: 1.00,
+                quantity: 1,
+                options: []
+            },
+	        {
+                name: "French Toast Sticks",
+                price: 1.50,
+                quantity: 5,
+                options: [],
+            }
+        ]
+    }
+}

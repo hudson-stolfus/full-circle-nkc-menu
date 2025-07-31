@@ -1,0 +1,42 @@
+#menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+}
+
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+}
+
+.menu-item {
+    padding: 0.5em 0;
+}
+
+.menu-item.sold-out {
+    display: none;
+}
+
+.menu-option {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+
+    & .option-price {
+        color: hsl(from var(--accent) h calc(s / 2) calc(l * 0.75));
+    }
+
+    & .option-quantity {
+        color: var(--text-muted);
+    }
+}
+
+.scan-line {
+    height: 0;
+    flex: 1;
+    border-bottom: 1px dotted var(--text-muted);
+}

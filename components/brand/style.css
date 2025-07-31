@@ -1,0 +1,65 @@
+#brand {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75em;
+    align-items: center;
+    cursor: pointer;
+}
+
+svg.logo {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: top;
+}
+
+.logo-accent {
+    fill: var(--accent);
+}
+
+.logo-main {
+    fill: var(--text);
+}
+
+.branch {
+    display: inline-block;
+    font-size: 0.65em;
+    font-weight: bold;
+    flex: 1 1 0;
+    white-space: nowrap;
+
+    @media (max-width: 900px) {
+        display: none;
+    }
+
+}
+
+@keyframes disco-mode {
+    0% {
+        --accent: hsl(0deg 100% 50%);
+    }
+    12.5% {
+        --accent: hsl(45deg 100% 50%);
+    }
+    25% {
+        --accent: hsl(90deg 100% 50%);
+    }
+    37.5% {
+        --accent: hsl(135deg 100% 50%);
+    }
+    50% {
+        --accent: hsl(180deg 100% 50%);
+    }
+    62.5% {
+        --accent: hsl(225deg 100% 50%);
+    }
+    75% {
+        --accent: hsl(270deg 100% 50%);
+    }
+    87.5% {
+        --accent: hsl(315deg 100% 50%);
+    }
+    100% {
+        --accent: hsl(360deg 100% 50%);
+    }
+}

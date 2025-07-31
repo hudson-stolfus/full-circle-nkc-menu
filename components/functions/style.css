@@ -1,0 +1,98 @@
+#functions {
+    min-width: 10ch;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    white-space: nowrap;
+    position: relative;
+    border-radius: var(--radius);
+    flex: 1 1 0;
+    mask-image: linear-gradient(to right, transparent 0%, var(--background) 2em calc(100% - 2em), transparent 100%);
+    mask-size: 100%;
+    mask-position: 50%;
+    mask-repeat: space;
+    transition: mask-size 500ms linear, mask-position 500ms linear;
+
+    @media (max-width: 500px) {
+        display: block;
+        order: 3;
+        mask: none !important;
+    }
+}
+
+#functions::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    background: var(--foreground);
+    border-radius: var(--radius);
+    padding: calc(var(--radius) * 0.5) var(--radius);
+    vertical-align: middle;
+    cursor: pointer;
+
+    @media (max-width: 500px) {
+        display: flex;
+        &:not(:last-child) {
+            margin-bottom: 0.5em;
+        }
+    }
+
+    @media (min-width: 500px) {
+        &:not(:last-child) {
+            margin-right: 0.5em;
+        }
+
+        &:first-child {
+            margin-left: 50%;
+        }
+
+        &:last-child {
+            margin-right: 50%;
+        }
+    }
+}
+
+.card.active {
+    filter: none;
+}
+
+.card-wrapper {
+    /*display: inline-block;*/
+}
+
+.card-icon {
+    flex: 1 0 auto;
+}
+
+.card-content {
+    font-family: var(--font), Helvetica, Arial, sans-serif;
+    font-size: 0.4em;
+    @media (min-width: 500px) {
+        white-space: nowrap;
+    }
+}
+
+.card-heading {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 0.6em;
+    gap: 0.5em;
+}
+
+.card-name {
+    display: inline-flex;
+    flex: 1 1 auto;
+}
+
+.card-price {
+    display: inline-flex;
+    color: var(--accent);
+    font-family: var(--font), sans-serif;
+    font-weight: lighter;
+}
