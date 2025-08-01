@@ -2,15 +2,15 @@
 // 16080 Foster St, Stilwell, KS
 // 6601 Royal St, Ste C, Pleasant Valley, MO
     "2025-08-01T19:30:00": {
-        name: "TBD",
-        icon: "circle-question-mark",
-        cost: null,
-        location: "TBD"
+        name: "Shark Tank",
+        icon: "fish",
+        cost: 7.00,
+        location: "6601 Royal St, Ste C, Pleasant Valley, MO"
     },
     "2025-08-02T19:30:00": {
-        name: "TBD",
-        icon: "circle-question-mark",
-        cost: null,
-        location: "TBD"
+        name: "Grill N Chill",
+        icon: "beef",
+        cost: 0,
+        location: "Anna's Farm"
     }
 }
