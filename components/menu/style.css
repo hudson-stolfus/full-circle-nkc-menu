@@ -28,6 +28,7 @@
 
     & .option-price {
         color: hsl(from var(--accent) h calc(s / 2) calc(l * 0.75));
+        font-family: var(--heading-font), serif;
     }
 
     & .option-quantity {

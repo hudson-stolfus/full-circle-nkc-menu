@@ -28,10 +28,10 @@ export default function menuComponent() {
             name.classList.add('card-name');
             name.appendChild(document.createTextNode(item.name))
             heading.appendChild(name);
-            let price = document.createElement('div');
-            price.classList.add('card-price');
-            price.textContent = `\$${item.price.toFixed(2)}`;
-            heading.appendChild(price);
+            // let price = document.createElement('div');
+            // price.classList.add('card-price');
+            // price.textContent = `\$${item.price.toFixed(2)}`;
+            // heading.appendChild(price);
 
             let content = document.createElement('div');
             content.classList.add('card-content');
@@ -59,7 +59,7 @@ export default function menuComponent() {
                     optionEl.appendChild(stockEl);
                 } else if (option.price) {
                     let priceEl = document.createElement("span");
-                    priceEl.innerText = `+ \$${option.price.toFixed(2)}`;
+                    priceEl.innerText = `\$${option.price.toFixed(2)}`;
                     priceEl.classList.add('option-price');
                     optionEl.appendChild(priceEl);
                 }

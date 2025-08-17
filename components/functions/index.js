@@ -2,27 +2,33 @@ import './style.css';
 import functions from './data.json5';
 import { createIcons, icons } from 'lucide';
 
-functions = {
-    "2025-07-28T19:00:00": {
-        name: "Monday Night Meeting",
-        icon: "armchair",
-        cost: 0,
-        location: "7310 Prairie View Rd, Platte Woods, MO"
-    },
-    "2025-07-31T19:00:00": {
-        name: "Thursday Night Meeting",
-        icon: "armchair",
-        cost: 0,
-        location: "6601 Royal St, Ste C, Pleasant Valley, MO"
-    },
-    ...functions
+let week_start = new Date();
+
+week_start.setDate(week_start.getDate() - week_start.getDay() + 1);
+functions[week_start.toISOString()] = {
+    name: "Monday Night Meeting",
+    icon: "armchair",
+    cost: 0,
+    location: "7310 Prairie View Rd, Platte Woods, MO"
 };
+
+week_start.setDate(week_start.getDate() - week_start.getDay() + 4);
+functions[week_start.toISOString()] = {
+    name: "Thursday Night Meeting",
+    icon: "armchair",
+    cost: 0,
+    location: "6601 Royal St, Ste C, Pleasant Valley, MO"
+}
 
 function marquee(el, i) {
     if (i >= el.children.length) i = 0;
     // el.scrollLeft = el.children[i].offsetLeft - el.offsetLeft + el.children[i].getBoundingClientRect().width / 2;
     if (window.innerWidth > 500) {
-        el.children[i].scrollIntoView({behavior: 'smooth', inline: 'center'});
+        try {
+            el.children[i].scrollIntoView({behavior: 'smooth', inline: 'center'});
+        } catch (e) {
+            console.error("No functions???????? Thats lame  :(")
+        }
     }
 
     setTimeout(() => {
@@ -71,6 +77,7 @@ export default function scheduleComponent() {
                 let icon = document.createElement('i')
                 icon.className = 'card-icon';
                 icon.setAttribute('data-lucide', functions[date].icon);
+                // icon.setAttribute('filter', 'url(#dither)');
                 functionEl.appendChild(icon);
             }
 
@@ -111,6 +118,10 @@ export default function scheduleComponent() {
     }
 
     createIcons({ icons });
+
+    for (let iconSVG of document.getElementsByClassName('card-icon')) {
+        iconSVG.setAttribute('filter', 'url(#dither)');
+    }
 
     if (el.scrollWidth > el.getBoundingClientRect().width) {
         marquee(el, 0);

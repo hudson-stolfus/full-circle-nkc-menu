@@ -9,17 +9,17 @@
                 options: [
                     {
                         name: "Monster Zero Ultra",
-                        price: null,
+                        price: 3.00,
                         stocked: true
                     },
                     {
                         name: "RedBull",
-                        price: null,
+                        price: 3.00,
                         stocked: true
                     },
                     {
                         name: "RedBull Sugar Free",
-                        price: null,
+                        price: 3.00,
                         stocked: true
                     }
                 ]

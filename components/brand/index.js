@@ -31,11 +31,20 @@ export default function brandComponent() {
     mainPath.setAttribute('d', 'M500,250c0,120.19-97.4,217.6-217.52,217.6c-36.77,0-71.45-9.11-101.81-25.26c26.19,11.74,55.23,18.23,85.74,18.23c116.25,0,210.49-94.32,210.49-210.57S382.67,39.43,266.41,39.43c-30.51,0-59.56,6.49-85.74,18.23c30.36-16.14,65.04-25.26,101.81-25.26C402.6,32.4,500,129.81,500,250z');
     group.appendChild(mainPath);
 
-    const branch = document.createElement('div');
+    const title = document.createElement('div');
+    title.classList.add('title');
+
+    const brandName = document.createElement('span');
+    brandName.classList.add('brand-name');
+    brandName.innerHTML = `Full Circle`;
+    title.appendChild(brandName);
+
+    const branch = document.createElement('span');
     branch.classList.add('branch');
-    branch.innerHTML = `Full Circle<br />North Kansas City`
+    branch.innerHTML = `North Kansas City`;
+    title.appendChild(branch);
 
     logo.appendChild(group);
     el.appendChild(logo);
-    el.appendChild(branch)
+    el.appendChild(title)
 }
