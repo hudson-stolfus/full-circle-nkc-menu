@@ -77,6 +77,10 @@ h3, h4, h5, h6 {
     top: 0;
 }
 
+.lucide {
+    stroke-width: 1px;
+}
+
 @media (max-width: 500px) {
     #header {
         flex-wrap: wrap;
