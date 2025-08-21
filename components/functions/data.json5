@@ -12,5 +12,11 @@
         icon: "beef",
         cost: 0,
         location: "25021 NE 136th St, Excelsior Springs, MO"
+    },
+    "2025-08-16T19:30:00": {
+        name: "Movie Night",
+        icon: "beef",
+        cost: 0,
+        location: "6601 Royal St, Pleasant Valley, MO"
     }
 }

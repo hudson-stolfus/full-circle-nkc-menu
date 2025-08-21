@@ -31,27 +31,27 @@
                 options: [
                     {
                         name: "Sprite",
-                        price: null,
+                        price: 1.00,
                         stocked: true
                     },
                     {
                         name: "Coca-Cola",
-                        price: null,
+                        price: 1.00,
                         stocked: true
                     },
                     {
                         name: "Dr. Pepper",
-                        price: null,
+                        price: 1.00,
                         stocked: true
                     },
                     {
                         name: "Mtn Dew Baja Blast",
-                        price: null,
+                        price: 1.00,
                         stocked: true
                     },
                     {
                         name: "Peach Nehi",
-                        price: null,
+                        price: 1.00,
                         stocked: true
                     }
                 ]
@@ -63,12 +63,12 @@
                 options: [
                     {
                         name: "Black",
-                        price: null,
+                        price: 1.00,
                         stocked: true
                     },
                     {
                         name: "Vanilla",
-                        price: null,
+                        price: 1.00,
                         stocked: true
                     }
                 ]
@@ -97,17 +97,17 @@
                 options: [
                     {
                         name: "Oreo Sandwich",
-                        price: null,
+                        price: 1.00,
                         stocked: true
                     },
                     {
                         name: "Drumstick",
-                        price: null,
+                        price: 1.00,
                         stocked: true
                     },
                     {
                         name: "KitKat Cone",
-                        price: null,
+                        price: 1.00,
                         stocked: true
                     }
                 ]
@@ -119,12 +119,12 @@
                 options: [
                     {
                         name: "KitKat",
-                        price: null,
-                        stocked: true
+                        price: 1.50,
+                        stocked: 1.50
                     },
                     {
                         name: "Reeses Pieces",
-                        price: null,
+                        price: 1.50,
                         stocked: true
                     }
                 ]
@@ -136,7 +136,7 @@
                 options: [
                     {
                         name: "Big Texas",
-                        price: null,
+                        price: 1.00,
                         stocked: true
                     },
                 ],
@@ -154,12 +154,12 @@
                 options: [
                     {
                         name: "Uncrustable",
-                        price: null,
+                        price: 1.00,
                         stocked: true
                     },
                     {
                         name: "Breakfast Sandwich",
-                        price: 1.00,
+                        price: 2.00,
                         stocked: true
                     }
                 ]
@@ -171,12 +171,12 @@
                 options: [
                     {
                         name: "Rolls",
-                        price: null,
+                        price: 1.00,
                         stocked: true
                     },
                     {
                         name: "Bagels",
-                        price: null,
+                        price: 1.00,
                         stocked: true
                     }
                 ]
@@ -188,7 +188,7 @@
                 options: [
                     {
                         name: "Honey BBQ",
-                        price: null,
+                        price: 2.00,
                         stocked: false
                     }
                 ],
