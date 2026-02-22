@@ -1,12 +1,18 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WebpackFavicons = require('webpack-favicons');
-const json5 = require('json5');
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import WebpackFavicons from 'webpack-favicons';
+import json5 from 'json5';
 
-module.exports = {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export default  {
     entry: {
         app: './src/app.js',
     },
+    mode: 'production',
+    devtool: false,
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
@@ -18,23 +24,21 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.html',
             title: "FCN Bar",
-	    minify: {
-        	collapseWhitespace: true,
-        	removeComments: true,
+	        minify: {
+        	    collapseWhitespace: true,
+        	    removeComments: true,
             },
         }),
         new WebpackFavicons({
             src: './components/favicon.svg',
             path: 'img',
-	    cache: true,
-	    mode: 'light',
+	        cache: true,
+	        mode: 'light',
             background: '#000',
             theme_color: '#f00',
             icons: { favicons: true }
         })
     ],
-    mode: 'production',
-    devtool: false,
     module: {
         rules: [
             {

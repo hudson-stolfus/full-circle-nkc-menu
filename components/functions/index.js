@@ -1,6 +1,6 @@
 import './style.css';
 import functions from './data.json5';
-import { createIcons, icons } from 'lucide';
+import { createIcons, PartyPopper, Armchair } from 'lucide';
 
 let week_start = new Date();
 
@@ -27,7 +27,7 @@ function marquee(el, i) {
         try {
             el.children[i].scrollIntoView({behavior: 'smooth', inline: 'center'});
         } catch (e) {
-            console.error("No functions???????? Thats lame  :(")
+            console.error("No functions???????? Thats lame :(")
         }
     }
 
@@ -117,12 +117,8 @@ export default function scheduleComponent() {
         }
     }
 
-    createIcons({ icons });
-
-    for (let iconSVG of document.getElementsByClassName('card-icon')) {
-        //iconSVG.setAttribute('filter', 'url(#dither)');
-    }
-
+    createIcons({icons: { Armchair, PartyPopper }});
+    
     if (el.scrollWidth > el.getBoundingClientRect().width) {
         marquee(el, 0);
     }

@@ -1,15 +1,17 @@
 const express = require('express');
-const path = require('path');
+const webpack = require('webpack');
+const webpackDevMiddleware = require('webpack-dev-middleware');
 
 const app = express();
-const distPath = path.join(__dirname, 'dist');
+const config = require('./webpack.config.mjs');
+const compiler = webpack(config);
 
-app.use(express.static(distPath, {
-  maxAge: '7d'
-}));
+app.use(
+    webpackDevMiddleware(compiler, {
+        publicPath: config.output.publicPath,
+    })
+);
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(distPath, 'index.html'));
+app.listen(3000, function() {
+    console.log('Staff page accesible via port 3000');
 });
-
-app.listen(3000);
