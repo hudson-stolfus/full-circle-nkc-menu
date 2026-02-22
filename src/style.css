@@ -78,7 +78,7 @@ h3, h4, h5, h6 {
 }
 
 .lucide {
-    stroke-width: 1px;
+    stroke-width: 1spx;
 }
 
 @media (max-width: 500px) {

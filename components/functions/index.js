@@ -120,7 +120,7 @@ export default function scheduleComponent() {
     createIcons({ icons });
 
     for (let iconSVG of document.getElementsByClassName('card-icon')) {
-        iconSVG.setAttribute('filter', 'url(#dither)');
+        //iconSVG.setAttribute('filter', 'url(#dither)');
     }
 
     if (el.scrollWidth > el.getBoundingClientRect().width) {

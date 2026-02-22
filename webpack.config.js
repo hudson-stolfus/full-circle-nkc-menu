@@ -10,24 +10,31 @@ module.exports = {
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        assetModuleFilename: 'components/[name].[hash][ext][query]',
+        assetModuleFilename: 'components/[name].[ext][query]',
         clean: true,
         publicPath: '/'
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
-            title: "FCN Bar"
+            title: "FCN Bar",
+	    minify: {
+        	collapseWhitespace: true,
+        	removeComments: true,
+            },
         }),
         new WebpackFavicons({
             src: './components/favicon.svg',
             path: 'img',
+	    cache: true,
+	    mode: 'light',
             background: '#000',
             theme_color: '#f00',
             icons: { favicons: true }
         })
     ],
-    mode: 'development',
+    mode: 'production',
+    devtool: false,
     module: {
         rules: [
             {

@@ -1,3 +1,4 @@
+
 {
     "menu-drinks": {
         title: "Drinks",
@@ -30,7 +31,7 @@
                 quantity: 1,
                 options: [
                     {
-                        name: "Sprite",
+                        name: "Diet Coca-Cola",
                         price: 1.00,
                         stocked: true
                     },
@@ -50,10 +51,15 @@
                         stocked: true
                     },
                     {
-                        name: "Peach Nehi",
+                        name: "Root Beer",
                         price: 1.00,
                         stocked: true
-                    }
+                    },
+		    {
+			name: "Jaritos",
+			price: 2.00,
+			stocked: true
+		    }
                 ]
             },
             {
@@ -70,19 +76,17 @@
                         name: "Vanilla",
                         price: 1.00,
                         stocked: true
-                    }
-                ]
-            },
-            {
-                name: "Blue Sex",
-                price: 2.00,
-                quantity: 1,
-                options: [
-                    {
-                        name: "Creamer",
-                        price: 0.50,
-                        stocked: true
-                    }
+                    },
+		    {
+			name: "Blue Sex",
+			price: 2.00,
+			stocked: true
+		    },
+		    {
+			name: "Blue Sex with Cream",
+			price: 2.50,
+			stocked: true
+		    }
                 ]
             }
         ]
@@ -104,11 +108,6 @@
                         name: "Drumstick",
                         price: 1.00,
                         stocked: true
-                    },
-                    {
-                        name: "KitKat Cone",
-                        price: 1.00,
-                        stocked: true
                     }
                 ]
             },
@@ -120,27 +119,31 @@
                     {
                         name: "KitKat",
                         price: 1.50,
-                        stocked: 1.50
+                        stocked: true
                     },
                     {
                         name: "Reeses Pieces",
+                        price: 1.50,
+                        stocked: false
+                    },
+		    {
+                        name: "Airheads Xtremes",
                         price: 1.50,
                         stocked: true
                     }
                 ]
             },
             {
-                name: "Cinnamon Roll",
+                name: "Chips",
                 price: 1.00,
                 quantity: 1,
                 options: [
                     {
-                        name: "Big Texas",
+                        name: "Frito Lay",
                         price: 1.00,
-                        stocked: true
-                    },
-                ],
-                stocked: true
+			stocked: true
+                     } 
+                ]
             }
         ]
     },
@@ -151,18 +154,7 @@
                 name: "Sandwiches",
                 price: 1.00,
                 quantity: 1,
-                options: [
-                    {
-                        name: "Uncrustable",
-                        price: 1.00,
-                        stocked: true
-                    },
-                    {
-                        name: "Breakfast Sandwich",
-                        price: 2.00,
-                        stocked: true
-                    }
-                ]
+                options: []
             },
             {
                 name: "Pizza",
@@ -176,35 +168,22 @@
                     },
                     {
                         name: "Bagels",
-                        price: 1.00,
+                        price: 2.00,
                         stocked: true
                     }
                 ]
             },
             {
-                name: "Wings",
-                price: 2.00,
-                quantity: 10,
-                options: [
-                    {
-                        name: "Honey BBQ",
-                        price: 2.00,
-                        stocked: false
-                    }
-                ],
-                stocked: false
-            },
-            {
-                name: "Corndog",
+                name: "Other",
                 price: 1.00,
                 quantity: 1,
-                options: []
-            },
-	        {
-                name: "French Toast Sticks",
-                price: 1.50,
-                quantity: 5,
-                options: [],
+                options: [
+	            {
+			name: "Corndog",
+			price: 1.00,
+			stocked: true
+                    }
+		]
             }
         ]
     }

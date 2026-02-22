@@ -1,10 +1,10 @@
 {
 // 16080 Foster St, Stilwell, KS
 // 6601 Royal St, Ste C, Pleasant Valley, MO
-    "2025-08-01T19:30:00": {
-        name: "Shark Tank",
-        icon: "fish",
-        cost: 7.00,
+    "2025-08-29T19:30:00": {
+        name: "Demolition Ball",
+        icon: "dribbble",
+        cost: 5.00,
         location: "6601 Royal St, Ste C, Pleasant Valley, MO"
     },
     "2025-08-02T19:30:00": {
@@ -18,5 +18,17 @@
         icon: "beef",
         cost: 0,
         location: "6601 Royal St, Pleasant Valley, MO"
+    },
+    "2025-08-22T19:30:00": {
+	name: "Cardboard Warriors",
+	icon: "package",
+	cost: 0,
+	location: "6601 Royal St, Pleasant Valley, MO"
+    },
+    "2025-08-23T17:00:00": {
+	name: "Slip N Slide Kickball",
+	icon: "volleyball",
+	cost: 0,
+	location: "Shae's House"
     }
 }
