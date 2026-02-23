@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
 
 :root {
-    --background: #FFEECC;
-    --foreground: #DDCCAA;
     --accent: #bb4400;
+    --background: hsl(from var(--accent) h calc(s / 4) 98%);
+    --foreground: hsl(from var(--accent) h calc(s / 4) 90%);
     --text: #000000;
     --text-muted: #444444;
     --radius: 0.5em;
@@ -16,9 +16,9 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #0a0600;
-        --foreground: #120d0b;
         --accent: #ff1000;
+        --background: hsl(from var(--accent) h calc(s / 4) 2%);
+        --foreground: hsl(from var(--accent) h calc(s / 4) 5%);
         --text: #FFFFFF;
         --text-muted: #666666;
     }

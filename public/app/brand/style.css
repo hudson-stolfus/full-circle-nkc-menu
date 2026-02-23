@@ -44,32 +44,102 @@ svg.logo {
     font-family: var(--font), sans-serif;
 }
 
-@keyframes disco-mode {
-    0% {
-        --accent: hsl(0deg 100% 50%);
+@media (prefers-color-scheme: light) {
+    @keyframes disco-mode {
+        0% {
+            --accent: hsl(0deg 100% 50%);
+            --background: hsl(from var(--accent) h calc(s / 4) 98%);
+            --foreground: hsl(from var(--accent) h calc(s / 4) 90%);
+        }
+        12.5% {
+            --accent: hsl(45deg 100% 50%);
+            --background: hsl(from var(--accent) h calc(s / 4) 98%);
+            --foreground: hsl(from var(--accent) h calc(s / 4) 90%);
+        }
+        25% {
+            --accent: hsl(90deg 100% 50%);
+            --background: hsl(from var(--accent) h calc(s / 4) 98%);
+            --foreground: hsl(from var(--accent) h calc(s / 4) 90%);
+        }
+        37.5% {
+            --accent: hsl(135deg 100% 50%);
+            --background: hsl(from var(--accent) h calc(s / 4) 98%);
+            --foreground: hsl(from var(--accent) h calc(s / 4) 90%);
+        }
+        50% {
+            --accent: hsl(180deg 100% 50%);
+            --background: hsl(from var(--accent) h calc(s / 4) 98%);
+            --foreground: hsl(from var(--accent) h calc(s / 4) 90%);
+        }
+        62.5% {
+            --accent: hsl(225deg 100% 50%);
+            --background: hsl(from var(--accent) h calc(s / 4) 98%);
+            --foreground: hsl(from var(--accent) h calc(s / 4) 90%);
+        }
+        75% {
+            --accent: hsl(270deg 100% 50%);
+            --background: hsl(from var(--accent) h calc(s / 4) 98%);
+            --foreground: hsl(from var(--accent) h calc(s / 4) 90%);
+        }
+        87.5% {
+            --accent: hsl(315deg 100% 50%);
+            --background: hsl(from var(--accent) h calc(s / 4) 98%);
+            --foreground: hsl(from var(--accent) h calc(s / 4) 90%);
+        }
+        100% {
+            --accent: hsl(360deg 100% 50%);
+            --background: hsl(from var(--accent) h calc(s / 4) 98%);
+            --foreground: hsl(from var(--accent) h calc(s / 4) 90%);
+        }
     }
-    12.5% {
-        --accent: hsl(45deg 100% 50%);
-    }
-    25% {
-        --accent: hsl(90deg 100% 50%);
-    }
-    37.5% {
-        --accent: hsl(135deg 100% 50%);
-    }
-    50% {
-        --accent: hsl(180deg 100% 50%);
-    }
-    62.5% {
-        --accent: hsl(225deg 100% 50%);
-    }
-    75% {
-        --accent: hsl(270deg 100% 50%);
-    }
-    87.5% {
-        --accent: hsl(315deg 100% 50%);
-    }
-    100% {
-        --accent: hsl(360deg 100% 50%);
+}
+
+@media (prefers-color-scheme: dark) {
+    @keyframes disco-mode {
+        0% {
+            --accent: hsl(0deg 100% 50%);
+            --background: hsl(from var(--accent) h calc(s / 4) 2%);
+            --foreground: hsl(from var(--accent) h calc(s / 4) 5%);
+        }
+        12.5% {
+            --accent: hsl(45deg 100% 50%);
+            --background: hsl(from var(--accent) h calc(s / 4) 2%);
+            --foreground: hsl(from var(--accent) h calc(s / 4) 5%);
+        }
+        25% {
+            --accent: hsl(90deg 100% 50%);
+            --background: hsl(from var(--accent) h calc(s / 4) 2%);
+            --foreground: hsl(from var(--accent) h calc(s / 4) 5%);
+        }
+        37.5% {
+            --accent: hsl(135deg 100% 50%);
+            --background: hsl(from var(--accent) h calc(s / 4) 2%);
+            --foreground: hsl(from var(--accent) h calc(s / 4) 5%);
+        }
+        50% {
+            --accent: hsl(180deg 100% 50%);
+            --background: hsl(from var(--accent) h calc(s / 4) 2%);
+            --foreground: hsl(from var(--accent) h calc(s / 4) 5%);
+        }
+        62.5% {
+            --accent: hsl(225deg 100% 50%);
+            --background: hsl(from var(--accent) h calc(s / 4) 2%);
+            --foreground: hsl(from var(--accent) h calc(s / 4) 5%);
+        }
+        75% {
+            --accent: hsl(270deg 100% 50%);
+            --background: hsl(from var(--accent) h calc(s / 4) 2%);
+            --foreground: hsl(from var(--accent) h calc(s / 4) 5%);
+        }
+        87.5% {
+            --accent: hsl(315deg 100% 50%);
+            --background: hsl(from var(--accent) h calc(s / 4) 2%);
+            --foreground: hsl(from var(--accent) h calc(s / 4) 5%);
+        }
+        100% {
+            --accent: hsl(360deg 100% 50%);
+            --background: hsl(from var(--accent) h calc(s / 4) 2%);
+            --foreground: hsl(from var(--accent) h calc(s / 4) 5%);
+        }
     }
 }
