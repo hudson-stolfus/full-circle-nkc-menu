@@ -1,5 +1,5 @@
 import './style.css';
-import menu from './data.json5';
+import menu from '../../menu.json5';
 
 export default function menuComponent() {
     const el = document.getElementById('menu');

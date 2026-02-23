@@ -10,6 +10,7 @@ const __dirname = path.dirname(__filename);
 export default  {
     entry: {
         app: './public/app/index.js',
+        staff: './public/staff/index.js'
     },
     mode: 'production',
     devtool: false,
@@ -22,7 +23,19 @@ export default  {
     plugins: [
         new HtmlWebpackPlugin({
             template: './public/app/index.html',
+            filename: "index.html",
+            chunks: ["app"],
             title: "FCN Bar",
+	        minify: {
+        	    collapseWhitespace: true,
+        	    removeComments: true,
+            },
+        }),
+        new HtmlWebpackPlugin({
+            template: './public/staff/index.html',
+            filename: "staff/index.html",
+            chunks: ["staff"],
+            title: "FCN Bar Staff",
 	        minify: {
         	    collapseWhitespace: true,
         	    removeComments: true,

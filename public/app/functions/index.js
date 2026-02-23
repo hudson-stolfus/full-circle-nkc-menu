@@ -1,5 +1,5 @@
 import './style.css';
-import functions from './data.json5';
+import functions from '../../functions.json5';
 import { createIcons, PartyPopper, Armchair } from 'lucide';
 
 let week_start = new Date();
