@@ -9,20 +9,19 @@ const __dirname = path.dirname(__filename);
 
 export default  {
     entry: {
-        app: './src/app.js',
+        app: './public/app/index.js',
     },
     mode: 'production',
     devtool: false,
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        assetModuleFilename: 'components/[name].[ext][query]',
         clean: true,
-        publicPath: '/'
+        publicPath: 'auto'
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html',
+            template: './public/app/index.html',
             title: "FCN Bar",
 	        minify: {
         	    collapseWhitespace: true,
@@ -30,7 +29,7 @@ export default  {
             },
         }),
         new WebpackFavicons({
-            src: './components/favicon.svg',
+            src: './public/favicon.svg',
             path: 'img',
 	        cache: true,
 	        mode: 'light',
